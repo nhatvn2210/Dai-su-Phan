@@ -1,5 +1,5 @@
 .navigation{
     box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-    width: 100vw;
+    width: calc(100vw - 6px) ;
     height: 64px;
 }
