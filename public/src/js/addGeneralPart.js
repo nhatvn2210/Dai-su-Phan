@@ -3,25 +3,29 @@ const header = document.querySelector('.header');
 // Function
 const addHeader = () => {
     let htmls =
-    `
-        <nav class="flex h-max justify-evenly py-[15px] uppercase text-xl items-center">
-            <div class="menu w-[40%] h-full">
+        `
+        <nav class="flex h-[64px] justify-evenly py-[15px] uppercase text-xl items-center roboto-medium">
+            <div class="icon w-[25%] justify-center flex">
+            
+            </div>
+            <div class="menu w-[75%] h-full justify-end flex items-center">
                 <ul class="flex justify-evenly">
                     <li>
-                        <a href="./index.html">home</a>
+                        <a href="./news.html">Tin tức - Sự kiện</a>
                     </li>
                     <li>
-                        <a href="./news.html">Tin tức</a>
+                        <a href="./library.html">Thư viện di sản</a>
                     </li>
                     <li>
-                        <a href="./library.html">weather</a>
+                        <a href="./goctrian.html">Góc Tri ân</a>
                     </li>
                     <li>
-                        <a href="./about.html">contact & about us</a>
+                        <a href="./about.html">Cổng liên hệ</a>
+                    </li>
+                    <li>
+                        <a href="./blog.html">Cộng đồng học sinh</a>
                     </li>
                 </ul>
-            </div>
-            <div class="acc-option w-[30%] justify-center flex">
                 <p>
                     <a href="./register.html">Register</a>
                     <span> / </span>

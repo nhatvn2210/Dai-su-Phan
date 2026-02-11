@@ -97,33 +97,44 @@
         bottom: 3px;
     }
 }
+
 /* Animation class */
 .fly-up {
     animation-name: fly-up;
     animation-duration: 2s;
 }
-.split-vertical-out{
+
+.split-vertical-out {
     animation-name: split-vertical-out;
 }
-.float-up{
+
+.float-up {
     animation-name: float-up;
 }
-.exit{
+
+.exit {
     animation-name: exit;
 }
-.appear-opacity{
+
+.appear-opacity {
     animation-name: appear-opacity;
 }
-.hover-fly:hover{
+
+.hover-fly:hover {
     opacity: 0.8;
     animation-name: hover-fly;
     animation-duration: 0.5s;
     position: relative;
     bottom: 3px;
 }
-.split-vertical-out, .float-up, .exit, .appear-opacity{
+
+.split-vertical-out,
+.float-up,
+.exit,
+.appear-opacity {
     animation-duration: 3s;
 }
+
 /* Font Class */
 /* Roboto */
 .roboto-thin {
@@ -208,24 +219,38 @@
 /* Navigation Style */
 nav {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    background-color: white;
-    color: black;
+    background-color: #0992C2;
+    color: white;
 }
 
-.menu li,
-.acc-option a {
-    padding: 5px;
+.menu {
+    margin-right: 5%;
+}
+
+.menu li {
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.menu ul {
+    margin-right: 15px;
+}
+
+.menu li a,
+.menu p a {
+    padding: 10px;
     border-radius: 8px;
     position: relative;
     transition: bottom .5s color .5s;
+    font-size: medium;
 }
 
-.menu li::after,
-.acc-option a::after {
+.menu li a::after,
+.menu p a::after {
     content: "";
     width: 0%;
     height: 2px;
-    background-color: green;
+    background-color: white;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -234,14 +259,14 @@ nav {
     transition: width .5s;
 }
 
-.menu li:hover,
-.acc-option a:hover {
+.menu li a:hover,
+.menu p a:hover {
     bottom: 3px;
-    color: green;
+    color: white;
 }
 
-.menu li:hover::after,
-.acc-option a:hover::after {
+.menu li a:hover::after,
+.menu p a:hover::after {
     width: 80%;
 }
 
