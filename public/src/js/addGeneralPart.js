@@ -4,7 +4,7 @@ const header = document.querySelector('.header');
 const addHeader = () => {
     let htmls =
         `
-        <nav class="flex h-[64px] justify-evenly py-[15px] uppercase text-xl items-center roboto-medium">
+        <nav class="flex h-[64px] justify-evenly py-[15px] uppercase text-xl items-center">
             <div class="icon w-[25%] justify-center flex">
             
             </div>
@@ -39,7 +39,7 @@ const addHeader = () => {
     header.classList.add("top-0");
     header.classList.add("z-[99]");
     header.classList.add("fixed");
-    header.classList.add("roboto-bold");
+    header.classList.add("roboto-medium");
 }
 // Main script
 addHeader();
